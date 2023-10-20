@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- start codes -->
+    <h1>Register</h1>
+    <form action="#!" method="get" autocomplete="on" id="register" name="register" enctype="multipart/form-data">
+        <!-- NAME -->
+        <div>
+            <label for="uname"><b>Adınız</b>:</label>
+            <input type="text" name="uname" id="uname" placeholder="Adınız ..." title="Adınızı giriniz." autofocus
+                required value="Hamit">
+        </div>
+
+        <!-- SURNAME -->
+        <div>
+            <label for="usurname"><b>Soyadınız</b>:</label>
+            <input type="text" name="usurname" id="usurname" placeholder="Soyadınız ..." title="Soyadınızı giriniz."
+                required value="Mızrak">
+        </div>
+
+        <!-- EMAİL -->
+        <div>
+            <label for="uemail"><b>Emailiniz</b>:</label>
+            <input type="email" name="uemail" id="uemail" placeholder="Emailiniz ..." title="Emailiniz giriniz."
+                required value="hamitmizrak@gmail.com">
+        </div>
+
+        <!-- PASSWORD -->
+        <div>
+            <label for="upassword"><b>Şifreniz</b>:</label>
+            <input type="password" name="upassword" id="upassword" placeholder="Şifreniz ..." title="Şifrenizi giriniz."
+                required value="123456789">
+        </div>
+
+         <!-- AGE -->
+         <div>
+            <label for="uage"><b>Yaş</b>:</label>
+            <input type="number" name="uage" min="18" max="55" step="2" size="2" id="uage" placeholder="Yaşınız ..." title="Yaşınız giriniz."
+                required >
+        </div>
+
+        <!-- GENDER -->
+        <div>
+            <label for="upassword"><b>Cinsiyet</b>:</label>
+            <input type="radio" name="upassword" id="female" title="Bayan" checked> Bayan
+            <input type="radio" name="upassword" id="male" title="Erkek"> Erkek
+        </div>
+
+        <!-- ABILITY -->
+        <div>
+            <label for="upassword"><b>Yetenekler</b>:</label>
+            <input type="checkbox" name="html5" id="html5" title="html5" checked> html5
+            <input type="checkbox" name="css3" id="css3" title="css3"> css3
+            <input type="checkbox" name="js" id="js" title="js"> js
+        </div>
+
+        <!-- COUNTRY -->
+        <div>
+            <label for="country"><b>Ülkeniz</b>:</label>
+            <select name="country" id="country" title="Ülkenizi seçiniz." required>
+                <option value="chooise">Seçiniz</option>
+                <option value="turkey">Türkiye</option>
+                <option value="germany">Almanya</option>
+                <option value="france">Fransa</option>
+            </select>
+        </div>
+
+        <!-- DATE -->
+        <div>
+            <label for="birthday"><b>Doğum Tarihiniz</b>:</label>
+            <input type="datetime-local" name="birthday" id="birthday" title="Doğum tarihiniz giriniz." required
+                value="123456789">
+        </div>
+
+         <!-- BUTTON -->
+         <div>
+            <input type="reset" name="reset" id="reset" value="Temizle">
+            <!-- <input type="submit" name="submit" id="submit" value="Gönder"> -->
+            <button type="submit" name="submit" id="submit">Gönder</button>
+
+            </div>
+    </form>
+
+    <!-- end code -->
+</body>
+
+</html>
